@@ -57,7 +57,7 @@
         </el-card>
     </div>
     <el-dialog title="資料を修正" :close-on-click-modal="false" v-model="dialog.visible" width="420px">
-        <el-form :model="dialog.dataForm" ref="dialogForm" :rules="dialog.dataRule" label-width="60px">
+        <el-form :model="dialog.dataForm" ref="dialogForm" :rules="dialog.dataRule" label-width="90px">
             <el-form-item label="氏名" prop="name">
                 <el-input v-model="dialog.dataForm.name" placeholder="氏名を入力してください。" maxlength="10" size="medium" class="input"
                     clearable />

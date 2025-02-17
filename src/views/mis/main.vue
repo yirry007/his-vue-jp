@@ -91,13 +91,13 @@
                             </el-icon>
                             <span slot="title">販促規則</span>
                         </el-menu-item>
-                        <el-menu-item index="MisCustomer" v-if="proxy.isAuth(['ROOT', 'CUSTOMER:SELECT'])"
+                        <!-- <el-menu-item index="MisCustomer" v-if="proxy.isAuth(['ROOT', 'CUSTOMER:SELECT'])"
                             @click="$router.push({ name: 'MisCustomer' })">
                             <el-icon>
                                 <SvgIcon name="customer_fill" class="icon-svg" />
                             </el-icon>
                             <span slot="title">顧客ファイル</span>
-                        </el-menu-item>
+                        </el-menu-item> -->
                         <el-menu-item index="MisOrder" v-if="proxy.isAuth(['ROOT', 'ORDER:SELECT'])"
                             @click="$router.push({ name: 'MisOrder' })">
                             <el-icon>
@@ -135,14 +135,14 @@
                             </el-icon>
                             <span slot="title">健診受付</span>
                         </el-menu-item>
-                        <el-menu-item index="MisAppointmentRestriction"
+                        <!-- <el-menu-item index="MisAppointmentRestriction"
                             v-if="proxy.isAuth(['ROOT', 'APPOINTMENT_RESTRICTION:SELECT'])"
                             @click="$router.push({ name: 'MisAppointmentRestriction' })">
                             <el-icon>
                                 <SvgIcon name="setting_fill" class="icon-svg" />
                             </el-icon>
                             <span slot="title">予約設定</span>
-                        </el-menu-item>
+                        </el-menu-item> -->
                         <el-menu-item index="MisDoctorCheckup" v-if="proxy.isAuth(['ROOT', 'CHECKUP:SELECT'])"
                             @click="$router.push({ name: 'MisDoctorCheckup' })">
                             <el-icon>

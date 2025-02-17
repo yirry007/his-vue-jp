@@ -80,7 +80,7 @@
     </div>
     <el-dialog :title="!dialog.dataForm.id ? '追加' : '編集'" v-if="proxy.isAuth(['ROOT', 'USER:INSERT', 'USER:UPDATE'])"
         :close-on-click-modal="false" v-model="dialog.visible" width="450px">
-        <el-form :model="dialog.dataForm" ref="dialogForm" :rules="dialog.dataRule" label-width="80px">
+        <el-form :model="dialog.dataForm" ref="dialogForm" :rules="dialog.dataRule" label-width="100px">
             <el-form-item label="アカウント" prop="username">
                 <el-input v-model="dialog.dataForm.username" maxlength="20" clearable />
             </el-form-item>
@@ -99,7 +99,7 @@
             <el-form-item label="電話番号" prop="tel">
                 <el-input v-model="dialog.dataForm.tel" maxlength="11" clearable />
             </el-form-item>
-            <el-form-item label="メールアドレス" prop="email">
+            <el-form-item label="メール" prop="email">
                 <el-input v-model="dialog.dataForm.email" maxlength="200" clearable />
             </el-form-item>
             <el-form-item label="入社日" prop="hiredate">

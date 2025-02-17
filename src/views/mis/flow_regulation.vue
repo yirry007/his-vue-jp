@@ -63,7 +63,7 @@
     <el-dialog :title="!dialog.dataForm.id ? '追加' : '編集'"
         v-if="proxy.isAuth(['ROOT', 'FLOW_REGULATION:INSERT', 'FLOW_REGULATION:UPDATE'])" :close-on-click-modal="false"
         v-model="dialog.visible" width="450px">
-        <el-form :model="dialog.dataForm" ref="dialogForm" :rules="dialog.dataRule" label-width="80px">
+        <el-form :model="dialog.dataForm" ref="dialogForm" :rules="dialog.dataRule" label-width="150px">
             <el-form-item label="診療科名" prop="place">
                 <el-input v-model="dialog.dataForm.place" placeholder="診療科名を入力してください。" maxlength="40" clearable />
             </el-form-item>

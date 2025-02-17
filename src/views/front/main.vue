@@ -197,7 +197,7 @@ const dialog = reactive({
     tel: null,
     code: null,
     disabled: false,
-    btnContent: 'SMS認証コードを受け取る',
+    btnContent: 'コード受け取る',
     num: 0,
     status: 'logout'
 });

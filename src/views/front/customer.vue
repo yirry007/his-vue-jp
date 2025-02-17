@@ -23,7 +23,7 @@
                 <el-icon>
                     <Collection />
                 </el-icon>
-                <span>カスタマーサポート</span>
+                <span>カスタマIM</span>
             </el-menu-item>
         </el-menu>
         <div class="content"><router-view /></div>

@@ -109,7 +109,7 @@
     <el-dialog :title="!goodsDialog.dataForm.id ? '追加' : '編集'"
         v-if="proxy.isAuth(['ROOT', 'GOODS:INSERT', 'GOODS:UPDATE'])" :close-on-click-modal="false"
         v-model="goodsDialog.visible" width="750px">
-        <el-form :model="goodsDialog.dataForm" ref="dialogForm" :rules="goodsDialog.dataRule" label-width="80px">
+        <el-form :model="goodsDialog.dataForm" ref="dialogForm" :rules="goodsDialog.dataRule" label-width="140px">
             <el-form-item label="パッケージ名" prop="title">
                 <el-input v-model="goodsDialog.dataForm.title" maxlength="50" clearable />
             </el-form-item>

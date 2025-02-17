@@ -51,14 +51,14 @@
   </div>
   <el-dialog :title="!dialog.dataForm.id ? '追加' : '編集'" v-if="proxy.isAuth(['ROOT', 'DEPT:INSERT', 'DEPT:UPDATE'])"
     :close-on-click-modal="false" v-model="dialog.visible" width="360px">
-    <el-form :model="dialog.dataForm" ref="dialogForm" :rules="dialog.dataRule" label-width="60px">
+    <el-form :model="dialog.dataForm" ref="dialogForm" :rules="dialog.dataRule" label-width="90px">
       <el-form-item label="部門" prop="deptName">
         <el-input v-model="dialog.dataForm.deptName" maxlength="10" clearable />
       </el-form-item>
       <el-form-item label="電話番号" prop="tel">
         <el-input v-model="dialog.dataForm.tel" maxlength="11" clearable />
       </el-form-item>
-      <el-form-item label="メールアドレス" prop="email">
+      <el-form-item label="メール" prop="email">
         <el-input v-model="dialog.dataForm.email" maxlength="200" clearable />
       </el-form-item>
       <el-form-item label="備考" prop="desc">
